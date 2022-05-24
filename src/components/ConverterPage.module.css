@@ -1,0 +1,36 @@
+.converterResult {
+    color: #fff;
+    font-weight: 600;
+}
+
+.converterResultColor {
+    font-size: 16px;
+    color: orange;
+}
+
+.converterUpRow {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.converterDownRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+}
+
+.converterFiled {
+    width: 50px;
+}
+
+.equalSign {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 250px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,28 @@
+.resultWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100px;
+}
+
+.resultName {
+    display: flex;
+    flex-direction: column;
+    color: orange;
+}
+
+.resultQuotes {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.currencySelect {
+    margin-bottom: 20px;
+}
+
+.currencyTitle {
+    font-weight: 400;
+    color: orange;
+    margin-bottom: 10px;
+}
