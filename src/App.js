@@ -6,7 +6,6 @@ import CurrencyPage from './components/CurrencyPage';
 import { BASE_URL, requestOptions } from './api/api';
 import NavBar from './components/NavBar';
 
-
 function App() {
 
     const [currencyOptions, setCurrencyOptions] = useState([])

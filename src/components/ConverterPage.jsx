@@ -5,6 +5,8 @@ import CurrencySelect from './repeatComponents/CurrencySelect';
 import { BASE_URL, requestOptions } from '../api/api';
 import FieldNumber from './FieldNumber';
 
+
+
 const ConverterPage = (props) => {
     const {
         currencyOptions,
@@ -26,8 +28,6 @@ const ConverterPage = (props) => {
                 .then(data => setResult(data.result))
         }
     }, [fromCurrency, toCurrency, amount])
-
-
     useEffect(() => {
         fieldRef.current.addEventListener('keyup', function () {
             this.value = this.value.replace(/[^\d]/g, '');
@@ -47,18 +47,20 @@ const ConverterPage = (props) => {
                     currencyOptions={currencyOptions}
                     selectedCurrency={fromCurrency}
                     onChangeCarrency={e => setFromCurrency(e.target.value)}
+                    className={s.converterSelectUp}
                 />
             </section>
             <div className={s.equalSign}>=</div>
             <section className={s.converterDownRow}>
                 <div className={s.converterResult}>
                     <span className={s.converterResultColor}>Всего: </span>
-                    {result ? result.toFixed(2) : 'empty'}
+                    <span>{result ? result.toFixed(2) : 'empty'}</span>
                 </div>
                 <CurrencySelect
                     currencyOptions={currencyOptions}
                     selectedCurrency={toCurrency}
                     onChangeCarrency={e => setToCurrency(e.target.value)}
+                    className={s.converterSelectDown}
                 />
             </section>
         </div>
